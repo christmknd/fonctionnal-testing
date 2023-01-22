@@ -1,0 +1,27 @@
+{
+  "name": "fonctionnal-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christmknd/fonctionnal-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christmknd/fonctionnal-testing/issues"
+  },
+  "homepage": "https://github.com/christmknd/fonctionnal-testing#readme",
+  "dependencies": {
+    "chromedriver": "^109.0.0",
+    "nightwatch": "^2.6.10"
+  },
+  "devDependencies": {
+    "geckodriver": "^3.2.0"
+  }
+}

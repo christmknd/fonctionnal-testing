@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="1"
+            tests="1">
+
+  <testsuite name="first_test"
+    errors="1" failures="1" hostname="" id="" package="first_test" skipped="1"
+    tests="1" time="7.454" timestamp="">
+  
+    <testcase name="step one: navigate to google" classname="first_test" time="7.454" assertions="2">
+
+      <failure message="Timed out while waiting for element &lt;input[name=btnK]&gt; to be visible for 1000 milliseconds. - expected &#34;visible&#34; but got: &#34;not visible&#34; (1091ms)">    at Object.step one: navigate to google (/Users/dev/Web/QA/fonctionnal-testing/tests/first_test.js:8:6)</failure>
+
+    
+    <error message="Timed out while waiting for element &lt;input[name=btnK]&gt; to be visible for 1000 milliseconds. - expected [0;32m&#34;visible&#34;[0m but got: [0;31m&#34;not visible&#34;[0m [0;90m(1091ms)[0m" type="error"><![CDATA[
+    Error
+    at Object.step one: navigate to google (/Users/dev/Web/QA/fonctionnal-testing/tests/first_test.js:8:6)
+    at Context.call (/Users/dev/Web/QA/fonctionnal-testing/node_modules/nightwatch/lib/testsuite/context.js:476:35)
+    at TestCase.run (/Users/dev/Web/QA/fonctionnal-testing/node_modules/nightwatch/lib/testsuite/testcase.js:58:31)
+    at Runnable.__runFn (/Users/dev/Web/QA/fonctionnal-testing/node_modules/nightwatch/lib/testsuite/index.js:745:80)
+    at Runnable.run (/Users/dev/Web/QA/fonctionnal-testing/node_modules/nightwatch/lib/testsuite/runnable.js:126:21)
+    at TestSuite.executeRunnable (/Users/dev/Web/QA/fonctionnal-testing/node_modules/nightwatch/lib/testsuite/index.js:898:49)
+    at TestSuite.handleRunnable (/Users/dev/Web/QA/fonctionnal-testing/node_modules/nightwatch/lib/testsuite/index.js:913:33)
+    at /Users/dev/Web/QA/fonctionnal-testing/node_modules/nightwatch/lib/testsuite/index.js:745:21
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async DefaultRunner.runTestSuite (/Users/dev/Web/QA/fonctionnal-testing/node_modules/nightwatch/lib/runner/test-runners/default.js:76:7)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+       TimeoutError
+   An error occurred while running .setValue() command on &lt;input[type=text]&gt;: element not interactable
+  (Session info: chrome=109.0.5414.87)
+    {&#34;error&#34;:{&#34;name&#34;:&#34;ElementNotInteractableError&#34;,&#34;remoteStacktrace&#34;:&#34;&#34;},&#34;status&#34;:-1,&#34;value&#34;:null}
+
+    Error location:
+    /Users/dev/Web/QA/fonctionnal-testing/tests/first_test.js:
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     5 |     .url(&#39;https://www.google.com&#39;)
+     6 |     .waitForElementVisible(&#39;body&#39;, 1000)
+     7 |     .setValue(&#39;input[type=text]&#39;, &#39;nightwatch&#39;) 
+     8 |     .waitForElementVisible(&#39;input[name=btnK]&#39;, 1000)
+     9 |     },
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
+  
+
+    
+
+  
+    
+    <testcase
+      name="step two: click input" classname="first_test">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
