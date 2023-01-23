@@ -3,5 +3,3 @@
 ## Nightwatch
 
 Lancer les tests nightwatch : npm test
-
-## WebdriverIO
